@@ -4,6 +4,7 @@ const fs = require('fs');
 const Manager = require('./lib/manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/intern');
+const organizeTeam = require('./src/page-template');
 
 const DIST_DIR = path.resolve(__dirname, "dist");
 const distPath = path.join(DIST_DIR, "index.html");
@@ -160,7 +161,7 @@ const questions = () => {
         if (!fs.existsSync(DIST_DIR)) {
             fs.mkdirSync(DIST_DIR);
         }
-        fs.writeFileSync(distPath, renderTeam(teamMembers), "utf-8");
+        fs.writeFileSync(distPath, organizeTeam(teamMembers), "utf-8");
     };
 
     createTeam();
