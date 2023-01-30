@@ -4,17 +4,16 @@ const Manager = require("../lib/manager");
 
 describe("Manager", () => {
     describe("Initialization", () => {
-        it("Should create a new Manager with name, id, email, and office number, it is also checking that the functions in js work properly", () => {
+        it("Should create a new Manager with name, id, email, and office number, and also check that the getOfficeNumber and getRole functions in manager.js are working properly", () => {
 
             const name = "Billy";
             const id = 7;
             const email = "billyboy8@gmail.com";
             const officeNumber = 207;
-            const role = "Manager";
 
-            const newEmployee = new Manager(name, id, email, officeNumber, role);
+            const newEmployee = new Manager(name, id, email, officeNumber);
             const info1 = newEmployee.getOfficeNumber();
-            const info2= newEmployee.getRole();
+            const info2 = newEmployee.getRole();
 
             expect(newEmployee instanceof Manager).toBe(true);
             expect(newEmployee.name).toEqual("Billy");
