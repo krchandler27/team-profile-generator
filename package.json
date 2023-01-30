@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
   "scripts": {
-    "test": "jest --verbose test/*"
+    "test": "jest",
+    "start": "node index.js",
+    "reset": "rm ./dist/index.html"
   },
   "repository": {
     "type": "git",

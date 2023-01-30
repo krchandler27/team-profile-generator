@@ -5,7 +5,7 @@ const Manager = require('./lib/manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/intern');
 
-const DIST_DIR = path.resolve(_dirname, "dist");
+const DIST_DIR = path.resolve(__dirname, "dist");
 const distPath = path.join(DIST_DIR, "index.html");
 
 const teamMembers = [];
@@ -13,7 +13,7 @@ const addToTeam = [];
 
 const questions = () => {
 
-    const createTeams = () => {
+    const createTeam = () => {
         inquirer
         .prompt([
             {
@@ -72,7 +72,7 @@ const questions = () => {
             .then((response) => {
                 const manager = new Manager(
                     response.managerName,
-                    response.managerID,
+                    response.managerId,
                     response.managerEmail,
                     response.managerOfficeNum
                 );
