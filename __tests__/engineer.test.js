@@ -12,7 +12,7 @@ describe("Engineer", () => {
             
             const newEmployee = new Engineer(name, id, email, githubUserName);
             
-            const info1 = newEmployee.getGithub();
+            const info1 = newEmployee.getGitHub();
             const info2 = newEmployee.getRole();
 
             expect(newEmployee instanceof Engineer).toBe(true);
