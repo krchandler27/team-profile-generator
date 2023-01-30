@@ -15,19 +15,19 @@ const questions = () => {
 
     const createTeam = () => {
         inquirer
-        .prompt([
-            {
-                type: "list",
-                name: "teamMember",
-                message: "Which type of team member would you like to add?",
-                choices: [
-                    "Manager",
-                    "Engineer",
-                    "Intern",
-                    "I do not wish to add any more team members."
-                ]
-            }
-        ])
+            .prompt([
+                {
+                    type: "list",
+                    name: "teamMember",
+                    message: "Which type of team member would you like to add?",
+                    choices: [
+                        "Manager",
+                        "Engineer",
+                        "Intern",
+                        "I do not wish to add any more team members."
+                    ]
+                }
+            ])
             .then((response) => {
                 switch (response.teamMember) {
                     case "Manager":
@@ -47,28 +47,28 @@ const questions = () => {
     }
     const createManager = () => {
         inquirer
-        .prompt([
-            {
-                type: "input",
-                name: "managerName",
-                message: "Full Name:",
-            },
-            {
-                type: "input",
-                name: "managerId",
-                message: "Employee ID:",
-            },
-            {
-                type: "input",
-                name: "managerEmail",
-                message: "Email:",
-            },
-            {
-                type: "input",
-                name: "managerOfficeNum",
-                message: "Office Number:",
-            },
-        ])
+            .prompt([
+                {
+                    type: "input",
+                    name: "managerName",
+                    message: "Full Name:",
+                },
+                {
+                    type: "input",
+                    name: "managerId",
+                    message: "Employee ID:",
+                },
+                {
+                    type: "input",
+                    name: "managerEmail",
+                    message: "Email:",
+                },
+                {
+                    type: "input",
+                    name: "managerOfficeNum",
+                    message: "Office Number:",
+                },
+            ])
             .then((response) => {
                 const manager = new Manager(
                     response.managerName,
@@ -84,28 +84,28 @@ const questions = () => {
 
     const createEngineer = () => {
         inquirer
-        .prompt([
-            {
-                type: "input",
-                name: "engineerName",
-                message: "Name:",
-            },
-            {
-                type: "input",
-                name: "engineerId",
-                message: "Employee ID:",
-            },
-            {
-                type: "input",
-                name: "engineerEmail",
-                message: "Email:",
-            },
-            {
-                type: "input",
-                name: "engineerGitHub",
-                message: "GitHub Username:"
-            },
-        ])
+            .prompt([
+                {
+                    type: "input",
+                    name: "engineerName",
+                    message: "Name:",
+                },
+                {
+                    type: "input",
+                    name: "engineerId",
+                    message: "Employee ID:",
+                },
+                {
+                    type: "input",
+                    name: "engineerEmail",
+                    message: "Email:",
+                },
+                {
+                    type: "input",
+                    name: "engineerGitHub",
+                    message: "GitHub Username:"
+                },
+            ])
             .then((response) => {
                 const engineer = new Engineer(
                     response.engineerName,
@@ -121,29 +121,29 @@ const questions = () => {
 
     const createIntern = () => {
         inquirer
-        .prompt([
-            {
-                type: "input",
-                name: "internName",
-                message: "Name:",
-            },
-            {
-                type: "input",
-                name: "internId",
-                message: "Employee ID:",
-            },
-            {
-                type: "input",
-                name: "internEmail",
-                message: "Email:",
-            },
-            {
-                type: "input",
-                name: "internSchool",
-                message: "College or University:",
-            },
-        ])
-        then((response) => {
+            .prompt([
+                {
+                    type: "input",
+                    name: "internName",
+                    message: "Name:",
+                },
+                {
+                    type: "input",
+                    name: "internId",
+                    message: "Employee ID:",
+                },
+                {
+                    type: "input",
+                    name: "internEmail",
+                    message: "Email:",
+                },
+                {
+                    type: "input",
+                    name: "internSchool",
+                    message: "College or University:",
+                },
+            ])
+        .then((response) => {
             const intern = new Intern(
                 response.internName,
                 response.internId,
@@ -156,12 +156,12 @@ const questions = () => {
         });
     }
 
-const buildTeam = () => {
-    if (!fs.existsSync(DIST_DIR)) {
-        fs.mkdirSync(DIST_DIR);
-    }
-    fs.writeFileSync(distPath, renderTeam(teamMembers), "utf-8");
-};
+    const buildTeam = () => {
+        if (!fs.existsSync(DIST_DIR)) {
+            fs.mkdirSync(DIST_DIR);
+        }
+        fs.writeFileSync(distPath, renderTeam(teamMembers), "utf-8");
+    };
 
     createTeam();
 
