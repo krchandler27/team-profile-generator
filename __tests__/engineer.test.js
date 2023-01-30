@@ -9,9 +9,8 @@ describe("Engineer", () => {
             const id = 5;
             const email = "sadidear112@gmail.com";
             const githubUserName = "sadiIsCool";
-            const role = "Engineer";
             
-            const newEmployee = new Engineer(name, id, email, githubUserName, role);
+            const newEmployee = new Engineer(name, id, email, githubUserName);
             
             const info1 = newEmployee.getGithub();
             const info2 = newEmployee.getRole();
@@ -20,7 +19,7 @@ describe("Engineer", () => {
             expect(newEmployee.name).toEqual("Sadi");
             expect(newEmployee.id).toEqual(5);
             expect(newEmployee.email).toEqual("sadidear112@gmail.com");
-            expect(info1).toEqual(githubUserName);
+            expect(info1).toEqual("sadiIsCool");
             expect(info2).toEqual("Engineer");
         });
     });
