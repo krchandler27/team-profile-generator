@@ -8,9 +8,9 @@ describe("Engineer", () => {
             const name = "Sadi";
             const id = 5;
             const email = "sadidear112@gmail.com";
-            const githubUserName = "sadiIsCool";
+            const engineerGitHub = "sadiIsCool";
             
-            const newEmployee = new Engineer(name, id, email, githubUserName);
+            const newEmployee = new Engineer(name, id, email, engineerGitHub);
             
             const info1 = newEmployee.getGitHub();
             const info2 = newEmployee.getRole();

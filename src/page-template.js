@@ -47,7 +47,7 @@ const createTeam = (team) => {
                     <li  class="list-group-item">${intern.getRole()}</li> 
                     <li class="list-group-item">ID: ${intern.getId()}</li>
                     <a href="mailto:" class="list-group-item">Email: ${intern.getEmail()}</a> 
-                    <li class="list-group-item">${intern.getSchool()}</li>
+                    <li class="list-group-item">School: ${intern.getSchool()}</li>
                     </ul>
                 </div>
             </div>  

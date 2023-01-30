@@ -24,7 +24,7 @@ This application can be invoked by using the following command: node index.js. T
 [Click Here](https://www.loom.com/share/8576253243484e718904dbc065443e4e)
  to watch the walkthrough tutorial.
 
-![teamProfileGenerator](https://user-images.githubusercontent.com/116527506/215389775-cf1abc63-0765-4c32-96e2-f71289c18eb8.JPG)
+![teamProfileGenerator](https://user-images.githubusercontent.com/116527506/215392143-695c08da-f6f6-4fa0-aa35-aa5896acfdb0.JPG)
 
 ## Test Instructions
 N/A
