@@ -9,9 +9,9 @@ const createTeam = (team) => {
                     <li class="list-group-item heading">${manager.getName()}</li>
                     <li class="list-group-item">${manager.getRole()}</li> 
                     <li class="list-group-item">ID: ${manager.getId()}</li>
-                    <a href="mailto:" class="list-group-item">Email: ${manager.getEmail()}</a>
-                    <li class="list-group-item">Office number: ${manager.getOfficeNumber()}</li>
-                    </ul>
+                    <a href="mailto:${manager.getEmail()}" class="list-group-item">Email: ${manager.getEmail()}</a>
+                    <a href="tel:${manager.getOfficeNumber()}" class="list-group-item">Office #: ${manager.getOfficeNumber()}</a>
+                                        </ul>
                 </div>
             </div>  
         </div>      
@@ -27,8 +27,8 @@ const createTeam = (team) => {
                     <li class="list-group-item heading">${engineer.getName()}</li>
                     <li  class="list-group-item">${engineer.getRole()}</li> 
                     <li class="list-group-item">ID: ${engineer.getId()}</li>
-                    <a href="mailto:" class="list-group-item">Email: ${engineer.getEmail()}</a> 
-                    <a href="https://github.com/" class="list-group-item">GitHub: ${engineer.getGitHub()}</a>
+                    <a href="mailto:${engineer.getEmail()}" class="list-group-item">Email: ${engineer.getEmail()}</a> 
+                    <a href="https://github.com/${engineer.getGitHub()}" class="list-group-item">GitHub: ${engineer.getGitHub()}</a>
                     </ul>
                 </div>
             </div>  
@@ -46,7 +46,7 @@ const createTeam = (team) => {
                     <li class="list-group-item heading">${intern.getName()}</li>
                     <li  class="list-group-item">${intern.getRole()}</li> 
                     <li class="list-group-item">ID: ${intern.getId()}</li>
-                    <a href="mailto:" class="list-group-item">Email: ${intern.getEmail()}</a> 
+                    <a href="mailto:${intern.getEmail()}" class="list-group-item">Email: ${intern.getEmail()}</a> 
                     <li class="list-group-item">School: ${intern.getSchool()}</li>
                     </ul>
                 </div>
@@ -91,6 +91,7 @@ module.exports = (team) => {
             integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
             <link rel="stylesheet" href="./styles/css/reset.css" />
             <link rel="stylesheet" href="./styles/css/style.css" />
+            <link rel="shortcut icon" href="../dist/images/logo.JPG">
         <script src="https://kit.fontawesome.com/f3d669e5cc.js" crossorigin="anonymous"></script>
         <title>Team Profile Generator</title>
     </head>

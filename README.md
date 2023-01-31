@@ -12,19 +12,19 @@
 * [Contact Me](#contact-me)
 
 ## Project Description
-This project will build you a team profile through node, inquirer, fs, javascript, html, and css. All the user has to do is know the information of the employees and enter that information in, when prompted.
+This project will build you a team profile through node, inquirer, fs, javascript, html, and css. All the user has to do is know the information about the employees and enter that information in, when prompted.
 
 ## Installation Instructions
-Download my team-profile-generator repo, install node, install inquirer and jest, and enjoy!
+Download the team-profile-generator repo, install node, install inquirer and jest, and enjoy!
 
 ## Usage Information
-This application can be invoked by using the following command: node index.js. The user will then be led through a series of questions about the employees of a company. The project will then build an employee webpage based on their answers.
+This application can be invoked by using the following command: node index.js. The user will then be led through a series of questions about the employees of a company. The application will then build an employee webpage for the user.
 
 ## Walkthrough Tutorial
-[Click Here](https://www.loom.com/share/8576253243484e718904dbc065443e4e)
+[Click Here](https://www.loom.com/share/2450fad508584445afc30e47b0a01a9d)
  to watch the walkthrough tutorial.
 
-![teamProfileGenerator](https://user-images.githubusercontent.com/116527506/215392143-695c08da-f6f6-4fa0-aa35-aa5896acfdb0.JPG)
+![readmePic](https://user-images.githubusercontent.com/116527506/215657579-249bd28c-ce65-4c26-9259-530753b600cc.JPG)
 
 ## Test Instructions
 N/A
@@ -33,7 +33,7 @@ N/A
 N/A
 
 ## Contact Me
-Link to GitHub Profile: https://github.com/krchandler27
+GitHub: https://github.com/krchandler27
 
 Email: krchandler27@gmail.com
 

@@ -1,3 +1,11 @@
+html {
+    background-color: white;
+}
+
+body {
+    background: black;
+}
+
 h1 {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -6,7 +14,7 @@ h1 {
     padding: 50px;
     text-align: center;
     margin-bottom: 80px;
-    
+
 }
 
 .heading {
@@ -20,13 +28,11 @@ h1 {
 }
 
 i {
-    background-color: white;
-    padding-right: 1em;
+    background-color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 35px;
-    padding: 0.5em 0 0.5em 1em;
+    padding: 0.5em 0 0.5em 0em;
     text-align: center;
-    
 }
 
 a {
@@ -34,12 +40,13 @@ a {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     padding: 2em 0 2em 0;
-    text-align: center;}
+    text-align: center;
+}
 
 a:hover {
-    color:  #14a2bb;
+    color: #14a2bb;
     text-decoration-line: underline;
-  }
+}
 
 li {
     background-color: white;
@@ -58,5 +65,18 @@ li {
     min-height: 300px;
     min-width: 350px;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
-      background: -webkit-radial-gradient(top right, #df2316,  #14a2bb);
+    border-radius: 50px;
+    border: 10px solid white;
+    background: black;
+}
+
+.list-group-item {
+    background: black;
+    color: white;
+}
+
+.list-group {
+    background: black;
+    color: white;
+    margin: auto;
 }
