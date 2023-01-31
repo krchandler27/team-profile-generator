@@ -21,7 +21,7 @@ Download the team-profile-generator repo, install node, install inquirer and jes
 This application can be invoked by using the following command: node index.js. The user will then be led through a series of questions about the employees of a company. The application will then build an employee webpage for the user.
 
 ## Walkthrough Tutorial
-[Click Here](https://www.loom.com/share/2450fad508584445afc30e47b0a01a9d)
+[Click Here](https://www.loom.com/share/a5aafacc297547bb9b9526522bb2d1bc)
  to watch the walkthrough tutorial.
 
 ![readmePic](https://user-images.githubusercontent.com/116527506/215660895-93b3f86d-43fc-4734-b20f-cbd380c63e7e.JPG)
