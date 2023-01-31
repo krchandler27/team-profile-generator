@@ -24,10 +24,10 @@ This application can be invoked by using the following command: node index.js. T
 [Click Here](https://www.loom.com/share/2450fad508584445afc30e47b0a01a9d)
  to watch the walkthrough tutorial.
 
-![readmePic](https://user-images.githubusercontent.com/116527506/215657579-249bd28c-ce65-4c26-9259-530753b600cc.JPG)
+![readmePic](https://user-images.githubusercontent.com/116527506/215660895-93b3f86d-43fc-4734-b20f-cbd380c63e7e.JPG)
 
 ## Test Instructions
-N/A
+Assuming you have completed the installation instruction, open the root file in the integrated terminal, then run the command node index.js. You're looking for 4 green passes. 👍
 
 ## Contributors
 N/A

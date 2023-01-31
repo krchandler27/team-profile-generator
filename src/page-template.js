@@ -5,7 +5,7 @@ const createTeam = (team) => {
             <div class="card" style="width: 18rem">
                 <div class="card-body">
                     <ul class="list-group">
-                    <i class="fa-solid fa-desktop"></i>
+                    <i class="fa-solid fa-people-roof"></i>
                     <li class="list-group-item heading">${manager.getName()}</li>
                     <li class="list-group-item">${manager.getRole()}</li> 
                     <li class="list-group-item">ID: ${manager.getId()}</li>
@@ -23,7 +23,7 @@ const createTeam = (team) => {
             <div class="card" style="width: 18rem">
                 <div class="card-body">
                     <ul class="list-group">
-                    <i class="fa-solid fa-file-code"></i>
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
                     <li class="list-group-item heading">${engineer.getName()}</li>
                     <li  class="list-group-item">${engineer.getRole()}</li> 
                     <li class="list-group-item">ID: ${engineer.getId()}</li>
